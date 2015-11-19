@@ -1,0 +1,44 @@
+{
+  "name": "vscode-nsp",
+  "description": "Checks for known vulnerabilities against the Node Security Project",
+  "version": "1.0.0",
+  "publisher": "adambaldwin",
+  "displayName": "Node Security Project (nsp)",
+  "icon": "images/node-security-logo.svg",
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.nspCheck",
+    "workspaceContains:package.json"
+  ],
+  "main": "./extension", 
+  "contributes": {
+    "configuration": {
+        "type": "object",
+        "title": "nsp",
+        "properties": {
+            "nsp.output": {
+                "type": "string",
+                "default": "default",
+                "description": "Specify an output format. Options are [default, summary, json, codeclimate, none]"
+            }
+        }
+    },    
+    "commands": [
+      {
+        "command": "extension.nspCheck",
+        "title": "Node Security Project Check (nsp)"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode": "0.10.x"
+  },
+  "dependencies": {
+    "nsp": "^2.0.2"
+  }
+}
