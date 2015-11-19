@@ -4,7 +4,7 @@ var Nsp = require('nsp');
 
 function activate(context) {
 
-	var disposable = vscode.commands.registerCommand('extension.nspCheck', function () {
+	var disposable = vscode.commands.registerCommand('nspCheck', function () {
 		var outputChannel = vscode.window.createOutputChannel('nsp');
 		
 		var payload = {
