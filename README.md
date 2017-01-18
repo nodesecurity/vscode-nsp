@@ -1,4 +1,4 @@
-# Node Security Project (nsp) for Visual Studio Code
+# Node Security Platform (nsp) for Visual Studio Code
 
 This extension adds the `nsp` command to check your package.json / npm-shrinkwrap.json against the Node Security project inventory of known vulnerabilities.
 
@@ -21,4 +21,4 @@ Valid formatters are default, summary, json, codeclimate, and none.
 }
 ```
 
-Additional information about the Node Security Project can be found at https://nodesecurity.io
+Additional information about the Node Security Platform can be found at https://nodesecurity.io
